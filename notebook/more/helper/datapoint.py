@@ -3,7 +3,7 @@ import os
 import random
 import urllib2
 
-KEY = os.environ['DATAPOINT_KEY']
+KEY = os.environ['DATAPOINT_KEY'] # Either pass in through docker or just replace as a string.
 GET_ALL_URL = "http://datapoint.metoffice.gov.uk/public/data/val/wxfcs/all/json/all?res=3hourly&key=" + KEY
 
 if os.environ.has_key('HTTP_PROXY'):
